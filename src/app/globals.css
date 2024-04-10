@@ -2,16 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0;
   padding: 0;
   outline: none;
 }
+img {
+  max-width: unset;
+}
 body {
   background-color: #fff4df;
   position: relative;
+  overflow-x: hidden;
 }
-.animate-para-first, .animate-para-fourth {
+.animate-para-first,
+.animate-para-fourth {
   padding: 10px;
   background-color: #fff4df;
   z-index: 10;
@@ -26,7 +31,7 @@ body {
     transform: translateX(-100px);
   }
 }
-.animate-para-fourth{
+.animate-para-fourth {
   padding: 16px;
   padding-right: 10px;
 }
@@ -46,11 +51,9 @@ body {
   }
 }
 
-
 section {
   position: absolute;
   width: 100vw;
-  height: 100vh;
   display: none;
   place-content: center;
   z-index: 100;
@@ -58,15 +61,78 @@ section {
 }
 
 .up {
-  animation: up 1s ease-out;
+  animation: up 0.6s ease-out;
   display: inline;
 }
 
 @keyframes up {
   from {
-    transform: translateY(100vh)
+    transform: translateY(100vh);
   }
   to {
-    transform: translateY(0)
+    transform: translateY(0);
+  }
+}
+.left-side {
+  word-wrap: break-word;
+}
+.images-slider img {
+  height: unset;
+}
+.images-slider {
+  position: relative;
+  animation: imageSlider 4s infinite;
+  animation-direction:normal;
+}
+@keyframes imageSlider {
+  0%, 10% {
+    left: 0px;
+  }
+  25%, 35% {
+    left: -440px;
+  }
+  50%, 60% {
+    left: -880px;
+  }
+  75%, 85% {
+    left: -1320px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.marquee {
+  font-size: 2vw;
+  color: #000;
+  height: 6vw;
+  overflow: hidden;
+  background-color: #b9a0ff;
+  z-index: 10000;
+  padding: 17px;
+  position: relative;
+  width: 1200px;
+  left: -580px;
+}
+/* nested div inside the container */
+.marquee div {
+  display: block;
+  width: 200%;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 3s linear infinite;
+}
+/* span with text */
+.marquee span {
+  float: left;
+  width: 50%;
+}
+/* keyframe */
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100px;
   }
 }

@@ -3,7 +3,6 @@ import Image from 'next/image';
 import React, {useState} from 'react';
 
 import {
-  AstrixLogo,
   SplashImage1,
   SplashImage2,
   SplashImage3,
@@ -15,6 +14,7 @@ import {
 } from '@/config/Images';
 
 import CollectionLanding from '../collection-landing/page';
+import Header from '../header/page';
 
 function Splash(): React.JSX.Element {
   const [animationDirection, setAnimationDirection] = useState('');
@@ -31,14 +31,11 @@ function Splash(): React.JSX.Element {
   return (
     <>
       <div
-        className="splash-screen w-screen h-screen cursor-default"
+        className="splash-screen cursor-default"
         onClick={() => {
           handleButtonClick(true);
         }}>
-        <div className="main-logo p-8 mb-8">
-          <Image src={AstrixLogo} width={406} height={50} alt="astrix-logo" />
-        </div>
-
+        <Header isSplashScreen={true} />
         <div className="h-[calc(100vh_-_14rem)] flex items-center justify-center title-box flex-col gap-5">
           <div className="flex gap-3 items-center">
             <h1 className="font-medium text-[64px] leading-[44px] text-black">
