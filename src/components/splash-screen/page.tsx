@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import React, {useState} from 'react';
+import React from 'react';
 
 import {
   SplashImage1,
@@ -12,12 +12,18 @@ import {
   SplashImage7,
   SplashImage8,
 } from '@/config/Images';
+import {COLLECTION_LANDING} from '@/utils/constant';
 
-import CollectionLanding from '../collection-landing/page';
 import Header from '../header/page';
+interface SplashScreenProps {
+  setAnimationDirection: React.Dispatch<React.SetStateAction<string>>;
+  setLanding: React.Dispatch<React.SetStateAction<string>>;
+}
 
-function Splash(): React.JSX.Element {
-  const [animationDirection, setAnimationDirection] = useState('');
+function Splash({
+  setAnimationDirection,
+  setLanding,
+}: SplashScreenProps): React.JSX.Element {
   let coolTime = true;
 
   const handleButtonClick = (isUp: boolean): void => {
@@ -26,7 +32,8 @@ function Splash(): React.JSX.Element {
     setTimeout(() => {
       coolTime = true;
     }, 1000);
-    setAnimationDirection(isUp ? 'up' : 'down');
+    setAnimationDirection(isUp ? 'up' : '');
+    setLanding(COLLECTION_LANDING);
   };
   return (
     <>
@@ -113,10 +120,6 @@ function Splash(): React.JSX.Element {
           </div>
         </div>
       </div>
-      <section
-        className={animationDirection === 'up' ? animationDirection : ''}>
-        <CollectionLanding />
-      </section>
     </>
   );
 }

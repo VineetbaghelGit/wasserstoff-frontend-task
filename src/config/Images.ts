@@ -17,4 +17,11 @@ export {default as CollectionImageSlider3} from '../images/collection/image-slid
 export {default as CollectionImageSlider4} from '../images/collection/image-slider4.png';
 export {default as PeopleFrame} from '../images/collection/people-frame.png';
 export {default as Collectible} from '../images/collection/collectible.png';
-export {default as Toggle} from '../images/collection/toggle.png';
+export {default as EventsImageSlider1} from '../images/events/image-slider1.png';
+export {default as EventsImageSlider3} from '../images/events/image-slider3.png';
+export {default as LocationIcon} from '../images/icons/location-icon.png';
+export {default as AlarmIcon} from '../images/icons/alarm-icon.png';
+export {default as EventsFrame1} from '../images/events/event-frame1.png';
+export {default as EventsFrame2} from '../images/events/event-frame2.png';
+export {default as EventsFrame3} from '../images/events/event-frame3.png';
+export {default as ImageQr} from '../images/events/image-qr.png';

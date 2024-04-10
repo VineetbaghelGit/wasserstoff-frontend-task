@@ -19,7 +19,7 @@ body {
 .animate-para-fourth {
   padding: 10px;
   background-color: #fff4df;
-  z-index: 10;
+  z-index: 1;
   animation: slide-para-first 3s infinite ease-out forwards;
   animation-direction: alternate-reverse;
 }
@@ -37,7 +37,7 @@ body {
 }
 .animate-para-third {
   background-color: #fff4df;
-  z-index: 10;
+  z-index: 1;
   animation: slide-para-third 3s infinite ease-out forwards;
   animation-direction: alternate-reverse;
   padding-left: 10px;
