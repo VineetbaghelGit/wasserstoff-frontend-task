@@ -1,0 +1,10 @@
+export {default as AstrixLogo} from '../images/Astrix-Logo.png';
+export {default as Emlblem} from '../images/Emlblem.png';
+export {default as SplashImage1} from '../images/splash-image1.png';
+export {default as SplashImage2} from '../images/splash-image2.png';
+export {default as SplashImage3} from '../images/splash-image3.png';
+export {default as SplashImage4} from '../images/splash-image4.png';
+export {default as SplashImage5} from '../images/splash-image5.png';
+export {default as SplashImage6} from '../images/splash-image6.png';
+export {default as SplashImage7} from '../images/splash-image7.png';
+export {default as SplashImage8} from '../images/splash-image8.png';
