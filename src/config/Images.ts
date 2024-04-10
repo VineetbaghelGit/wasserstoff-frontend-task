@@ -1,5 +1,4 @@
 export {default as AstrixLogo} from '../images/Astrix-Logo.png';
-export {default as Emlblem} from '../images/Emlblem.png';
 export {default as SplashImage1} from '../images/splash/splash-image1.png';
 export {default as SplashImage2} from '../images/splash/splash-image2.png';
 export {default as SplashImage3} from '../images/splash/splash-image3.png';
