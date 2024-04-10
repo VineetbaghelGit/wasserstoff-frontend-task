@@ -2,32 +2,140 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html{
+  font-size: 62%;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+img {
+  max-width: unset;
+}
+body {
+  background-color: #fff4df;
+  position: relative;
+  overflow-x: hidden;
+}
+.animate-para-first,
+.animate-para-fourth {
+  padding: 10px;
+  background-color: #fff4df;
+  z-index: 1;
+  animation: slide-para-first 3s infinite ease-out forwards;
+  animation-direction: alternate-reverse;
+}
+@keyframes slide-para-first {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+.animate-para-fourth {
+  padding: 16px;
+  padding-right: 10px;
+}
+.animate-para-third {
+  background-color: #fff4df;
+  z-index: 1;
+  animation: slide-para-third 3s infinite ease-out forwards;
+  animation-direction: alternate-reverse;
+  padding-left: 10px;
+}
+@keyframes slide-para-third {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0px);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+section {
+  position: absolute;
+  width: 100vw;
+  display: none;
+  place-content: center;
+  z-index: 100;
+  top: 0;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.up {
+  animation: up 0.6s ease-out;
+  display: inline;
+}
+
+@keyframes up {
+  from {
+    transform: translateY(100vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.left-side {
+  word-wrap: break-word;
+}
+.images-slider img {
+  height: unset;
+}
+.images-slider {
+  position: relative;
+  animation: imageSlider 4s infinite;
+  animation-direction:normal;
+}
+@keyframes imageSlider {
+  0%, 10% {
+    left: 0px;
+  }
+  25%, 35% {
+    left: -440px;
+  }
+  50%, 60% {
+    left: -880px;
+  }
+  75%, 85% {
+    left: -1320px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.marquee {
+  font-size: 2vw;
+  color: #000;
+  height: 6vw;
+  overflow: hidden;
+  background-color: #b9a0ff;
+  z-index: 10000;
+  padding: 17px;
+  position: relative;
+  width: 1200px;
+  left: -580px;
+}
+/* nested div inside the container */
+.marquee div {
+  display: block;
+  width: 200%;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 3s linear infinite;
+}
+/* span with text */
+.marquee span {
+  float: left;
+  width: 50%;
+}
+/* keyframe */
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100px;
   }
 }
