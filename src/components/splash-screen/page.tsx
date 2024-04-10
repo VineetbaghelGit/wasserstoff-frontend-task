@@ -72,12 +72,12 @@ function Splash({
             </div>
           </div>
           <div className="flex items-center">
-            <Image src={SplashImage3} alt="astrix-logo" objectFit="cover" />
+            <Image src={SplashImage3} alt="astrix-logo" />
             <div className="flex gap-3 items-center animate-para-third">
               <h1 className="font-medium text-[64px] leading-[44px] text-black ">
                 BETWEEN
               </h1>
-              <Image src={SplashImage4} alt="astrix-logo" objectFit="cover" />
+              <Image src={SplashImage4} alt="astrix-logo" />
               <h1 className="font-medium text-[64px] leading-[44px] text-black ">
                 MUSIC
               </h1>
@@ -92,7 +92,6 @@ function Splash({
               width={299}
               height={41}
               alt="astrix-logo"
-              objectFit="cover"
               className="pl-4"
             />
             <h1 className="font-medium text-[64px] leading-[44px] text-black animate-para-fourth">
@@ -103,16 +102,15 @@ function Splash({
               width={137}
               height={74}
               alt="astrix-logo"
-              objectFit="cover"
             />
           </div>
           <div className="flex items-center">
-            <Image src={SplashImage7} alt="astrix-logo" objectFit="cover" />
+            <Image src={SplashImage7} alt="astrix-logo" />
             <div className="flex gap-3 items-center animate-para-third">
               <h1 className="font-medium text-[64px] leading-[44px] text-black ">
                 ART
               </h1>
-              <Image src={SplashImage8} alt="astrix-logo" objectFit="cover" />
+              <Image src={SplashImage8} alt="astrix-logo" />
               <h1 className="font-medium text-[64px] leading-[44px] text-black ">
                 & COLLECTIONS
               </h1>

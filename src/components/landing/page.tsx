@@ -2,10 +2,10 @@ import React from 'react';
 
 import {COLLECTION_LANDING} from '@/utils/constant';
 
-import CollectionLeftAside from '../collection-left-aside/page';
-import EventRightSide from '../collection-right-aside/EventRightSide';
-import CollectionRightAside from '../collection-right-aside/page';
 import Header from '../header/page';
+import CollectionLeftAside from '../landing-left-aside/page';
+import EventRightSide from '../landing-right-aside/EventRightSide';
+import CollectionRightAside from '../landing-right-aside/page';
 interface CollectionLandingProps {
   landing: string;
   setLanding: React.Dispatch<React.SetStateAction<string>>;

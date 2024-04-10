@@ -1,7 +1,7 @@
 'use client';
 import {useEffect, useState} from 'react';
 
-import CollectionLanding from '@/components/collection-landing/page';
+import CollectionLanding from '@/components/landing/page';
 
 import Splash from '../components/splash-screen/page';
 
