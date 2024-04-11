@@ -38,18 +38,18 @@ interface SplashScreenProps {
 function Splash({
   setAnimationDirection,
   setLanding,
-}: SplashScreenProps): React.JSX.Element {
-  let coolTime = true;
+}: Readonly<SplashScreenProps>): React.JSX.Element {
+  let flag = true;
 
   /**
    * Handles the button click event.
    * @param {boolean} isUp - Indicates whether the animation direction is up.
    */
   const handleButtonClick = (isUp: boolean): void => {
-    if (!coolTime) return;
-    coolTime = false;
+    if (!flag) return;
+    flag = false;
     setTimeout(() => {
-      coolTime = true;
+      flag = true;
     }, 1000);
     setAnimationDirection(isUp ? 'up' : '');
     setLanding(COLLECTION_LANDING);

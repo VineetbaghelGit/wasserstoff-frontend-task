@@ -24,7 +24,7 @@ function CollectionLanding({
   landing,
   setLanding,
   setAnimationDirection,
-}: CollectionLandingProps): React.JSX.Element {
+}: Readonly<CollectionLandingProps>): React.JSX.Element {
   return (
     <>
       {/* Main container with background color and padding */}
