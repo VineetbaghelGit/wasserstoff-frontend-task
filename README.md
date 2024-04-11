@@ -30,19 +30,17 @@ git clone <repository-url>
 ```
 
 2. Navigate to the project directory.
+```bash
+cd <project-directory>
+```
 3. Run the following command to install the necessary dependencies:
+```bash
+npm install
+```
 
-   - `npm install` or `yarn install`
-
-Run the development server:
-
+4. Run the development server:
 ```bash
 npm run dev
 ```
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.   
 
-1. Clone this repository to your local machine:
-
-```bash
-git clone <repository-url>
