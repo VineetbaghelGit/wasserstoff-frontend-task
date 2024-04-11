@@ -1,9 +1,24 @@
 import React from 'react';
 
+/**
+ * Represents the props for the NavigateButton component.
+ */
 interface NavigateButtonProps {
+  /**
+   * A function to set the animation direction.
+   */
   setAnimationDirection: React.Dispatch<React.SetStateAction<string>>;
+  /**
+   * A function to update the landing page type.
+   */
   setLanding: React.Dispatch<React.SetStateAction<string>>;
 }
+
+/**
+ * Functional component representing the navigation button to restart the application.
+ * @param {NavigateButtonProps} props - Props for the NavigateButton component.
+ * @returns {React.JSX.Element} - The JSX element representing the navigation button.
+ */
 function NavigateButton({
   setAnimationDirection,
   setLanding,
@@ -11,8 +26,10 @@ function NavigateButton({
   return (
     <div className="flex justify-center">
       <div className="flex">
+        {/* Restart button */}
         <button
           onClick={() => {
+            // Reset the landing page and animation direction
             setLanding('');
             setAnimationDirection('');
           }}

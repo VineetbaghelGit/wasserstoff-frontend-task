@@ -16,14 +16,14 @@ export default function Home(): JSX.Element {
    *
    * @type {string}
    */
-  const [animationDirection, setAnimationDirection] = useState('');
+  const [animationDirection, setAnimationDirection] = useState<string>('');
 
   /**
    * State to manage the landing page type.
    *
    * @type {string}
    */
-  const [landing, setLanding] = useState('');
+  const [landing, setLanding] = useState<string>('');
 
   /**
    * Effect hook to scroll to the top of the page when the landing type changes.

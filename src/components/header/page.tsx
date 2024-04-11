@@ -20,8 +20,10 @@ interface HeaderProps {
  */
 function Header({isSplashScreen}: HeaderProps): React.JSX.Element {
   return (
+    // Main container for the header
     <div className={isSplashScreen ? 'main-logo p-8 mb-8' : ''}>
       <div className="flex">
+        {/* Conditional rendering of AstrixBranding image if not on splash screen */}
         {!isSplashScreen && (
           <Image
             src={AstrixBranding}
@@ -30,6 +32,7 @@ function Header({isSplashScreen}: HeaderProps): React.JSX.Element {
             alt="astrix-logo"
           />
         )}
+        {/* Rendering AstrixLogo or CollectionLogo based on the splash screen status */}
         <Image
           src={isSplashScreen ? AstrixLogo : CollectionLogo}
           alt="astrix-logo"
