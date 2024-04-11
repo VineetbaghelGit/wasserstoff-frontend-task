@@ -45,7 +45,11 @@ export default function Home(): JSX.Element {
       {/* Collection landing page section */}
       <section
         className={animationDirection === 'up' ? animationDirection : ''}>
-        <CollectionLanding landing={landing} setLanding={setLanding} />
+        <CollectionLanding
+          landing={landing}
+          setLanding={setLanding}
+          setAnimationDirection={setAnimationDirection}
+        />
       </section>
     </>
   );

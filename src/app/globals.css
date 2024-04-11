@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
-  font-size: 62%;
-}
 * {
   margin: 0;
   padding: 0;
@@ -85,19 +82,23 @@ section {
 .images-slider {
   position: relative;
   animation: imageSlider 4s infinite;
-  animation-direction:normal;
+  animation-direction: normal;
 }
 @keyframes imageSlider {
-  0%, 10% {
+  0%,
+  10% {
     left: 0px;
   }
-  25%, 35% {
+  25%,
+  35% {
     left: -440px;
   }
-  50%, 60% {
+  50%,
+  60% {
     left: -880px;
   }
-  75%, 85% {
+  75%,
+  85% {
     left: -1320px;
   }
   100% {
@@ -137,5 +138,11 @@ section {
   }
   100% {
     left: -100px;
+  }
+}
+
+@media (max-width: 576px) {
+  img {
+    width: 100%;
   }
 }

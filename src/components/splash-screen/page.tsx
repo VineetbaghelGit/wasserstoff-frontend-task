@@ -15,6 +15,7 @@ import {
 import {COLLECTION_LANDING} from '@/utils/constant';
 
 import Header from '../header/page';
+import NavigateButton from '../navigate-button/page';
 interface SplashScreenProps {
   setAnimationDirection: React.Dispatch<React.SetStateAction<string>>;
   setLanding: React.Dispatch<React.SetStateAction<string>>;
@@ -45,7 +46,7 @@ function Splash({
         <Header isSplashScreen={true} />
         <div className="h-[calc(100vh_-_14rem)] flex items-center justify-center title-box flex-col gap-5">
           <div className="flex gap-3 items-center">
-            <h1 className="font-medium text-[64px] leading-[44px] text-black">
+            <h1 className="font-medium md:text-[64px] sm:text-[32px] text-[14px] leading-[44px] text-black">
               WE
             </h1>
             <Image
@@ -54,12 +55,12 @@ function Splash({
               height={61}
               alt="astrix-logo"
             />
-            <h1 className="font-medium text-[64px] leading-[44px] text-black animate-para-first">
+            <h1 className="font-medium md:text-[64px] sm:text-[32px] text-[14px] leading-[44px] text-black animate-para-first">
               ORGANIZE THE
             </h1>
           </div>
           <div className="flex gap-3 items-center">
-            <h1 className="font-medium text-[64px] leading-[44px] text-black ">
+            <h1 className="font-medium md:text-[64px] sm:text-[32px] text-[14px] leading-[44px] text-black ">
               CONNECTION
             </h1>
             <div className="image-animation">
@@ -74,17 +75,17 @@ function Splash({
           <div className="flex items-center">
             <Image src={SplashImage3} alt="astrix-logo" />
             <div className="flex gap-3 items-center animate-para-third">
-              <h1 className="font-medium text-[64px] leading-[44px] text-black ">
+              <h1 className="font-medium md:text-[64px] sm:text-[32px] text-[14px] leading-[44px] text-black ">
                 BETWEEN
               </h1>
               <Image src={SplashImage4} alt="astrix-logo" />
-              <h1 className="font-medium text-[64px] leading-[44px] text-black ">
+              <h1 className="font-medium md:text-[64px] sm:text-[32px] text-[14px] leading-[44px] text-black ">
                 MUSIC
               </h1>
             </div>
           </div>
           <div className="flex items-center">
-            <h1 className="font-medium text-[64px] leading-[44px] text-black">
+            <h1 className="font-medium md:text-[64px] sm:text-[32px] text-[14px] leading-[44px] text-black">
               ARTIST
             </h1>
             <Image
@@ -94,7 +95,7 @@ function Splash({
               alt="astrix-logo"
               className="pl-4"
             />
-            <h1 className="font-medium text-[64px] leading-[44px] text-black animate-para-fourth">
+            <h1 className="font-medium md:text-[64px] sm:text-[32px] text-[14px] leading-[44px] text-black animate-para-fourth">
               CULTURE
             </h1>
             <Image
@@ -107,17 +108,21 @@ function Splash({
           <div className="flex items-center">
             <Image src={SplashImage7} alt="astrix-logo" />
             <div className="flex gap-3 items-center animate-para-third">
-              <h1 className="font-medium text-[64px] leading-[44px] text-black ">
+              <h1 className="font-medium md:text-[64px] sm:text-[32px] text-[14px] leading-[44px] text-black ">
                 ART
               </h1>
               <Image src={SplashImage8} alt="astrix-logo" />
-              <h1 className="font-medium text-[64px] leading-[44px] text-black ">
+              <h1 className="font-medium md:text-[64px] sm:text-[32px] text-[14px] leading-[44px] text-black ">
                 & COLLECTIONS
               </h1>
             </div>
           </div>
         </div>
       </div>
+      <NavigateButton
+        setAnimationDirection={setAnimationDirection}
+        setLanding={setLanding}
+      />
     </>
   );
 }
