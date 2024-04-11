@@ -11,8 +11,8 @@ function CollectionRightAside(): React.JSX.Element {
   return (
     <div className="bg-[#15181B] z-[9999] w-[2/6] h-auto">
       {/* Collection details */}
-      <div className="w-[40%]">
-        <div className="p-10 pb-0 pl-24">
+      <div className="w-[90vw] md:w-[40%]">
+        <div className="p-10 pb-0 md:pl-24 pl:0">
           {/* Collection titles */}
           <h1 className="font-bold text-[26px] leading-[32.5px] text-[#fff]">
             Explore Your First Collectible
@@ -37,13 +37,13 @@ function CollectionRightAside(): React.JSX.Element {
               width={150}
               height={40}
             />
-            <p className="text-[16px] text-[#fff] leading-[44px]">
+            <p className="md:text-[16px] text-[13px] text-[#fff] leading-[44px]">
               22k people interested
             </p>
           </div>
         </div>
         {/* Collection marquee */}
-        <div className="marquee rotate-90 h-full w-full">
+        <div className="hidden md:inline-block marquee rotate-90 h-full w-full">
           <div>
             <span className="font-semibold">
               Event : Oasis Bus tour , JLN Stadium , Delhi{' '}
@@ -56,7 +56,7 @@ function CollectionRightAside(): React.JSX.Element {
         </div>
       </div>
       {/* Collectibles */}
-      <div className="pl-24 collectibles">
+      <div className="pl:0 md:pl-24 collectibles">
         <p className="text-[14px] text-[#fff]">Collectibles</p>
         {/* Collection images */}
         <div className="flex gap-2 my-8">

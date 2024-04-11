@@ -8,8 +8,8 @@
   outline: none;
 }
 ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }
 img {
   max-width: unset;
@@ -57,15 +57,16 @@ body {
 
 section {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   display: none;
   place-content: center;
   z-index: 100;
   top: 0;
+  height: max-content;
 }
 
 .up {
-  animation: up 0.6s ease-out;
+  animation: up 0.4s ease-out;
   display: inline;
 }
 
@@ -146,7 +147,22 @@ section {
 }
 
 @media (max-width: 576px) {
-  img {
+  .first-line-anime img,
+  .second-line-anime img,
+  .third-line-anime img,
+  .fourth-line-anime img,
+  .fifth-line-anime img {
     width: 100%;
   }
+  .collectibles {
+    margin-top: 30px;
+  }
+  .third-line-anime > img{
+    width: 130px;
+  }
+  .fifth-line-anime > img {
+    width: 130px;
+    height: 40px;
+  }
+
 }

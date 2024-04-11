@@ -33,7 +33,7 @@ function NavigateButton({
             setLanding('');
             setAnimationDirection('');
           }}
-          className="mt-80 z-[1000] fixed right-6 bottom-3 bg-[#020203] py-[1px] px-[15px] rounded-[40px] leading-[32px] text-[12px] text-[#fff] border-r-slate-500">
+          className="mt-80 z-[10000] fixed right-6 bottom-3 bg-[#020203] py-[1px] px-[15px] rounded-[40px] leading-[32px] text-[12px] text-[#fff] border-r-slate-500">
           Restart
         </button>
       </div>

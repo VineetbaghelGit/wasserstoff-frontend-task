@@ -30,12 +30,12 @@ function CollectionLanding({
       {/* Main container with background color and padding */}
       <div className="bg-[#15181B] p-[20px] overflow-x-hidden">
         {/* Flex container for layout */}
-        <div className="flex">
+        <div className="flex md:flex-nowrap flex-wrap">
           <div>
             {/* Header component */}
             <Header isSplashScreen={false} />
             {/* Container for collection content */}
-            <div className="collection-content flex mt-16">
+            <div className="collection-content mt-16">
               {/* Left aside component */}
               <CollectionLeftAside landing={landing} setLanding={setLanding} />
             </div>

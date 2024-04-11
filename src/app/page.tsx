@@ -37,10 +37,12 @@ export default function Home(): JSX.Element {
   return (
     <>
       {/* Splash screen component */}
-      <Splash
-        setAnimationDirection={setAnimationDirection}
-        setLanding={setLanding}
-      />
+      {animationDirection === '' && (
+        <Splash
+          setAnimationDirection={setAnimationDirection}
+          setLanding={setLanding}
+        />
+      )}
 
       {/* Collection landing page section */}
       <section
