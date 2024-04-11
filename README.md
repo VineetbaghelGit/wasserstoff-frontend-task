@@ -6,6 +6,8 @@ This project is a frontend development task implemented using Next.js with Tailw
 
 ## Technology Stack/Libraries Used
 
+The project is built using the following technologies:
+
 - Next.js
 - Tailwind CSS
 - ESLint
@@ -43,4 +45,12 @@ npm install
 npm run dev
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.   
+
+## Demo
+
+[Astrix - Wasserstoff Frontend Task](https://wasserstoff-frontend-task.vercel.app/)
+
+## How I approached the task
+
+I approached the task by setting up a Next.js project with TypeScript for type safety, ESLint for code quality checks, and Husky for linters, tests, or other code quality checks. Following the provided design in Figma, I began by implementing the splash screen and custom header component. Then, I moved on to the landing page, integrating animations and components according to the design, such as the image slider and collectible information sections. I ensured reusability by utilising common components across different landing pages, such as the header component. Afterward, I managed responsiveness for the entire application using Tailwind CSS responsive utility variants, CSS media queries. Additionally, I extensively commented on the codebase to explain complex logic, functions, and components for the understanding of other developers and also added JSDoc comments for the components, specifying parameters, return types, and providing examples, These comments are clear, concise, and designed to facilitate comprehension of the codebase.
 

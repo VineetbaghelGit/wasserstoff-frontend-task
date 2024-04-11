@@ -36,7 +36,7 @@ interface CollectionLeftAsideProps {
 function CollectionLeftAside({
   landing,
   setLanding,
-}: CollectionLeftAsideProps): React.JSX.Element {
+}: Readonly<CollectionLeftAsideProps>): React.JSX.Element {
   return (
     <div>
       {/* Main container for left aside section */}

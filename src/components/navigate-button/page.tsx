@@ -22,7 +22,7 @@ interface NavigateButtonProps {
 function NavigateButton({
   setAnimationDirection,
   setLanding,
-}: NavigateButtonProps): React.JSX.Element {
+}: Readonly<NavigateButtonProps>): React.JSX.Element {
   return (
     <div className="flex justify-center">
       <div className="flex">
