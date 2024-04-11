@@ -46,7 +46,12 @@ npm run dev
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.   
 
-## Demo
+## Video Demo
+
+https://github.com/VineetbaghelGit/wasserstoff-frontend-task/assets/133185399/b4ece294-4642-46ec-9055-3d15b564f346
+
+
+## Deployed Demo
 
 [Astrix - Wasserstoff Frontend Task](https://wasserstoff-frontend-task.vercel.app/)
 
