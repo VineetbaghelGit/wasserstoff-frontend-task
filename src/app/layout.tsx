@@ -33,6 +33,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* Set the body class with the lexend font class name */}
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={lexend.className}>{children}</body>
     </html>
   );
