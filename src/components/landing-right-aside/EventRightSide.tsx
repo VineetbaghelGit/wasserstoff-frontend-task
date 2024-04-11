@@ -19,8 +19,8 @@ function EventRightSide(): React.JSX.Element {
   return (
     <div className="bg-[#15181B] z-[9999] w-[2/6] h-auto">
       {/* Event details */}
-      <div className="w-[40%]">
-        <div className="p-10 pb-0 pl-20">
+      <div className="w-[95vw] md:w-[40%]">
+        <div className="p-10 pb-0 md:pl-20 pl:0">
           {/* Event titles */}
           <h1 className="font-bold text-[26px] leading-[32.5px] text-[#fff]">
             Explore Your First Event
@@ -29,8 +29,8 @@ function EventRightSide(): React.JSX.Element {
             Event Name
           </h1>
           {/* Event details */}
-          <div className="flex gap-4 my-8">
-            <div className="flex gap-2">
+          <div className="flex md:gap-4 gap-2 my-8">
+            <div className="flex gap-2 items-center">
               <Image
                 src={LocationIcon}
                 width={27}
@@ -41,7 +41,7 @@ function EventRightSide(): React.JSX.Element {
                 Venue
               </span>
             </div>
-            <div className="flex gap-2">
+            <div className="flex gap-2 items-center">
               <Image
                 src={AlarmIcon}
                 width={27}
@@ -60,7 +60,7 @@ function EventRightSide(): React.JSX.Element {
           </p>
         </div>
         {/* Event marquee */}
-        <div className="marquee rotate-90 h-full w-full">
+        <div className="hidden md:inline-block marquee rotate-90 h-full w-full">
           <div>
             <span className="font-semibold">
               Event : Oasis Bus tour , JLN Stadium , Delhi{' '}
@@ -72,7 +72,7 @@ function EventRightSide(): React.JSX.Element {
           </div>
         </div>
       </div>
-      <div className="pl-20 collectibles">
+      <div className="pl:0 md:pl-20 collectibles">
         <p className="text-[26px] text-[#fff] leading-[32px]">Artist Lineup</p>
         {/* Artist lineup */}
         <div className="flex my-20">
@@ -97,7 +97,7 @@ function EventRightSide(): React.JSX.Element {
           />
         </div>
         {/* QR code and join waitlist button */}
-        <div className="flex items-center gap-10 mt-24">
+        <div className="flex items-center gap-5 md:gap-10 mt-24">
           <Image src={ImageQr} width={105} height={105} alt="ImageQr" />
           <button className="bg-[#FFCA5F] font-bold py-[10px] px-[20px] rounded-[40px] leading-[32px] text-[24px] text-[#1A1D21]">
             Join Waitlist
